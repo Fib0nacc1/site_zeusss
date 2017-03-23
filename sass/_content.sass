@@ -1,0 +1,102 @@
+.content
+	width: 100vw
+	height: 500px
+	background-color: $altColor
+	position: relative
+	@media screen and (max-width: 1100px)
+		height: 650px
+	@media screen and (max-width: 500px)
+		height: 500px
+
+	&__textFirst
+		width: 98vw
+		margin-left: 2vw
+		+flex_container(space-between)
+		@media screen and (max-width: 500px)
+			width: 90%
+		&_art
+			width: 60vw
+			height: 40%
+			@media screen and (max-width: 500px)
+				width: 100%
+			&_title
+				+h3($textColorLight)
+			&_text
+				+p($textColor)
+				@media screen and (max-width: 1100px)
+					width: 95%	
+				@media screen and (max-width: 500px)
+					width: 100%	
+				
+		&_img
+			width: 30vw
+			height: 430px
+			background-image: url(../img/info-photo.png)
+			background-size: contain
+			transform: translateY(-4vh)
+			background-repeat: no-repeat
+			@media screen and (max-width: 1100px)
+				width: 45vw
+				height: 450px
+			@media screen and (max-width: 500px)
+				display: none
+	&__textSecond
+		position: absolute
+		bottom: 0
+		padding-left: 2vw
+		width: 78vw
+		height: 55%
+		background-color: #232615
+		background-image: url(../img/info-logo.png)
+		background-position: right
+		background-size: (auto 43vh)
+		background-repeat: no-repeat
+		@media screen and (max-width: 1100px)
+			width: 85vw
+		@media screen and (max-width: 500px)
+			width: 95vw
+			height: 58%
+		&_title
+			+h3($textColor)
+			width: 90%
+			@media screen and (max-width: 1100px)
+				width: 80%
+			@media screen and (max-width: 500px)
+				width: 100%
+		&_par
+			+p($textColor2)
+			width: 65%
+			@media screen and (min-width: 1400px)
+				width: 80%
+			@media screen and (max-width: 1100px)
+				width: 75%
+			@media screen and (max-width: 500px)
+				width: 100%
+		
+	&__bottle
+		position: absolute
+		right: 25vw
+		top: 55px
+		width: 12vw
+		height: 575px
+		background-image: url('../img/beer.png')
+		background-position: right
+		background-size: contain
+		background-repeat: no-repeat
+		@media screen and (min-width: 1100px)
+			&:hover
+				background-image: url('../img/beer-2.png')
+		@media screen and (min-width: 1400px)
+			right: 26vw
+		@media screen and (max-width: 1100px)
+			width: 20vw
+			height: 650px
+			right: 13vw
+			top: 100px
+		@media screen and (max-width: 500px)
+			display: none
+
+				
+
+
+	

@@ -1,0 +1,118 @@
+.footer
+  background-image: url("../img/main_bgi1.jpg")
+  width: 100%
+  height: 3500px
+  background-size: cover
+.craft
+  padding: 100px 0
+  position: relative
+  h4
+    color: $mainColorGold
+    margin-bottom: 7rem
+    font-family: $titleFont2
+    font-size: 4em
+    line-height: 1em
+  p
+    margin-bottom: 5rem
+    color: $mainColor
+    font-size: 25px
+    font-family: $mainFont
+  &__box
+    max-width: 65%
+  img
+    position: absolute
+    right: 0
+    top: -150px
+    width: 35%
+    z-index: 50
+.end
+  position: relative
+  display: flex
+  justify-content: center
+  align-self: center
+  // height: 100vh
+  &__box
+    position: absolute
+    z-index: 2
+    text-align: center
+    margin: 20px auto
+    h3
+      color: $mainColorGold
+      margin-bottom: 2rem
+      margin-top: 100px
+      font-size: 45px
+    p
+      color: $mainColor
+      margin-bottom: 5rem
+      font-size: 25px
+
+
+
+.end__btn
+  height: 50px
+  color: #fff
+  text-align: center
+  position: relative
+  vertical-align: enddle
+  background-color: rgba(35, 38, 21, .9)
+  box-sizing: border-box
+  display: block
+  text-align: center
+  text-transform: uppercase
+  font: 1rem $mainFont
+  padding: 15px
+  border: 0
+  box-shadow: inset 0 0 0 2px #404429
+  max-width: 150px
+  margin: 20px auto
+  font-size: 12px
+  transition: background-color .2s linear
+
+
+.end__btn:before, .end__btn:after
+  box-sizing: border-box
+  content: ''
+  position: absolute
+  width: 100%
+  height: 100%
+
+
+.end__btn
+  -webkit-transition: color 0.25s
+  transition: color 0.25s
+
+.end__btn:before, .end__btn:after
+  border: 2px solid transparent
+  width: 0
+  height: 0
+
+.end__btn:before
+  top: 0
+  left: 0
+
+.end__btn:after
+  bottom: 0
+  right: 0
+
+.end__btn:hover
+  width: 100%
+  color: $mainColorGold
+  background-color: rgba(75, 77, 31, .5)
+  transition: background-color .5s ease-in
+
+
+.end__btn:hover:before, .end__btn:hover:after
+  width: 100%
+  height: 100%
+
+.end__btn:hover:before
+  border-top-color: $mainColorGold
+  border-right-color: $mainColorGold
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+
+.end__btn:hover:after
+  border-bottom-color: $mainColorGold
+  border-left-color: $mainColorGold
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s

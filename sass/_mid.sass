@@ -1,0 +1,162 @@
+@keyframes box
+  0%
+    width: 0
+  100%
+    width: 100%
+.mid
+  position: relative
+  height: 685px
+  background: linear-gradient(to bottom, #1a1c0f, #13150c)
+
+
+  &__btn
+    height: 50px
+    width: 150px
+    border: 0
+    box-shadow: inset 0 0 0 2px #404429
+    color: #fff
+    margin-left: 6em
+    text-align: center
+    position: relative
+    vertical-align: middle
+    background-color: rgba(35, 38, 21, .9)
+
+
+  .mid__btn:before, .mid__btn:after
+    box-sizing: border-box
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+
+
+  .mid__btn
+    -webkit-transition: color 0.25s
+    transition: color 0.25s
+
+  .mid__btn:before, .mid__btn:after
+    border: 2px solid transparent
+    width: 0
+    height: 0
+
+  .mid__btn:before
+    top: 0
+    left: 0
+
+  .mid__btn:after
+    bottom: 0
+    right: 0
+
+  .mid__btn:hover
+    width: 100%
+    color: $mainColorGold
+    background-color: rgba(75, 77, 31, .5)
+
+
+  .mid__btn:hover:before, .mid__btn:hover:after
+    width: 100%
+    height: 100%
+
+  .mid__btn:hover:before
+    border-top-color: $mainColorGold
+    border-right-color: $mainColorGold
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+
+  .mid__btn:hover:after
+    border-bottom-color: $mainColorGold
+    border-left-color: $mainColorGold
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+
+
+  &__img
+    position: absolute
+    right: 0
+    top: -50px
+    overflow: visible
+    z-index: 10
+    width: 35%
+  &__box
+    width: 100%
+    &_quality
+      width: 100%
+      position: relative
+      &_block
+        left: 0
+        position: absolute
+        box-sizing: border-box
+        padding: 0 0 92px
+        width: 100%
+        &_img
+          position: absolute
+          top: 20px
+          bottom: 12rem
+          margin: auto
+          right: 10%
+          width: 13%
+        &_h3
+          font-size: 55px
+          font-weight: 400
+          margin-left: 90px
+          margin-top: 70px
+          color: #fff
+          &_gold
+            color: $mainColorGold
+            font-size: 55px
+            margin-left: 90px
+            margin-top: 50px
+            padding-top: 50px
+            font-weight: 400
+        &_p
+          font-size: 25px
+          font-family: "AmiriRegular"
+          color: $mainColor
+          margin-left: 90px
+          line-height: 2em
+
+      &_block:first-of-type
+        top: 0
+        width: 70%
+        z-index: 1
+      &_block:last-of-type
+        height: 65vh
+        margin-top: 250px
+        z-index: 2
+        background-image: url("../img/box/box1.png")
+        background-repeat: no-repeat
+        max-width: 95%
+        background-position: 109% 53%
+        background-size: 100%
+        z-index: 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // 111
+        //   111
+        //

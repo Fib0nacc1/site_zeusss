@@ -1,0 +1,59 @@
+
+.start
+	height: 100vh
+	background-image: url('../img/top/1_1.jpg')
+	background-size: cover
+	position: relative
+	z-index: 1
+	&__box
+		display: flex
+		-ms-align-items: center
+		align-items: center
+		justify-content: center
+		text-align: center
+		color: #fff
+		line-height: 2
+		&_title
+			&_beer
+				font-weight: bolder
+				font-size: 65px
+				position: relative
+				&:before
+					position: absolute
+					background-color: $mainColorGold
+					width: 20rem
+					height: 0.4rem
+					right: -15rem
+					content: ''
+					top: 0
+					bottom: 3px
+					margin: auto
+					border-radius: 10px
+				&:after
+					@extend :before
+					right: auto
+					left: -15rem
+			&_more
+				margin-top: 200px
+				color: $mainColor
+			&_dan
+				color: $mainColor
+
+	&__logo
+		display: flex
+		justify-content: center
+		padding-top: 100px
+		margin-bottom: 70px
+		&_img
+			width: 110px
+			height: 110px
+
+.start:before
+	z-index: -1
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba(0, 0, 0, .6)

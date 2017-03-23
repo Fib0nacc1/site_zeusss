@@ -1,0 +1,79 @@
+header
+	background-image: url('../img/header_bg.jpg')
+	max-height: 1060px
+	
+	text-align: center
+	position: relative
+	background-position: center 0
+	background-size: cover
+	background-repeat: no-repeat
+	box-sizing: border-box
+	padding: 6% 0
+	font-size: 60px
+	h1
+		font: 100% $secondary_Font
+		font-weight: 900
+		line-height: 6rem
+		color: #fff
+		margin-top: 5%
+		span
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				background-color: $textColor
+				// width: 0
+				height: 0.4rem
+				right: -25rem
+				top: 0
+				bottom: 3px
+				margin: auto
+				-webkit-animation-name: top-anim
+				-moz-animation-name: top-anim
+				-ms-animation-name: top-anim
+				-o-animation-name: top-anim
+				-webkit-animation-duration: .5s
+				-moz-animation-duration: .5s
+				animation-duration: .5s
+				-webkit-animation-timing-function: linear
+				-moz-animation-timing-function: linear
+				animation-timing-function: linear
+				-webkit-animation-delay: 2.5s
+				-moz-animation-delay: 2.5s
+				animation-delay: 2.5s
+				-webkit-animation-fill-mode: forwards
+				-moz-animation-fill-mode: forwards
+				animation-fill-mode: forwards
+
+			&:after
+				@extend span:before
+				right: auto
+				left: -25rem
+	h2
+		font: 3.6rem $secondary_Font
+		font-weight: normal
+		color: #fff
+		margin-bottom: 0.8rem
+	h3
+		font: 2.4rem $main_Font
+		color: $textColor
+		font-style: italic
+		margin-bottom: 33rem
+	a
+		color: $textColor
+		font: 1.6rem $main_Font
+		font-style: italic
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 19px
+			height: 10px
+			background-image: url('../img/arrow.png')
+			left: 0
+			right: 0
+			margin: 0 auto
+			bottom: -20px
+	img
+		width: 7.5%
+		min-width: 70px
